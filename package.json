@@ -1,39 +1,46 @@
 {
-    "name": "notNull",
-    "version": "1.0.0",
-    "description": "A ts decorator that avoid undefined parameters",
-    "author": "zjutkz",
-    "scripts": {
-        "build": "npm run clean && tsc",
-        "dev": "npm run clean && tsc -w",
-        "prepublish": "npm run build",
-        "start": "tsc -w"
-    },
-    "dependencies": {
-        "reflect-metadata": "^0.1.13"
-    },
-    "devDependencies": {},
-    "keywords": [],
-    "license": "MIT",
-    "directories": {
-        "doc": "doc"
-    },
-    "main": "./index.js",
-    "nyc": {
-        "extension": [
-            ".ts",
-            ".tsx"
-        ],
-        "exclude": [
-            "**/*.d.ts",
-            "coverage/**",
-            "test/**",
-            "demo/**"
-        ],
-        "reporter": [
-            "text-summary",
-            "html"
-        ],
-        "all": true
-    }
+  "name": "@zjutkzwayne/notnull",
+  "version": "1.0.0",
+  "description": "A ts decorator that avoid undefined parameters",
+  "author": "zjutkz",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "start": "tsc -w"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "license": "MIT",
+  "directories": {
+    "doc": "doc"
+  },
+  "main": "./index.js",
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "coverage/**",
+      "test/**",
+      "demo/**"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "all": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjutkz/NotNull.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zjutkz/NotNull/issues"
+  },
+  "homepage": "https://github.com/zjutkz/NotNull#readme"
 }
